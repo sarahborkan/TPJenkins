@@ -26,4 +26,14 @@ public class Voyageur {
 	private int age;
 	@OneToMany(mappedBy = "voyageur")
 	private List<Reservation> reservations;
+	
+	public Voyageur(String nom, String prenom, int age, List<Reservation> reservations) {
+		super();
+		this.nom = nom;
+		this.prenom = prenom;
+		this.age = age;
+		this.reservations = reservations;
+	}
+	
+	
 }
