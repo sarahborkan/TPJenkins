@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Table
-@Data @AllArgsConstructor @NoArgsConstructor
+@Data @AllArgsConstructor @NoArgsConstructor 
 public class Voyageur {
 	
 	@Id
@@ -34,6 +34,14 @@ public class Voyageur {
 		this.age = age;
 		this.reservations = reservations;
 	}
+
+	public Voyageur(String nom, String prenom, int age) {
+		super();
+		this.nom = nom;
+		this.prenom = prenom;
+		this.age = age;
+	}
+	
 	
 	
 }
