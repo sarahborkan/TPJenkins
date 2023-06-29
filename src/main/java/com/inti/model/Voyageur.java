@@ -20,7 +20,7 @@ public class Voyageur {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int idVoyageur;
+	private int id;
 	private String nom;
 	private String prenom;
 	private int age;
